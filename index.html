@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini-Kyndryl Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo-header.png" alt="Kyndryl Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="https://www.ashbycomputers.co.uk/?">Services</a></li>
+            <li><a href="https://www.ibm.com/consulting">Consulting</a></li>
+            <li><a href="https://www.infotech.com/">Industries</a></li>
+            <li><a href="https://www.kyndryl.com/gb/en">About Us</a></li>
+            <li><a href="https://www.reuters.com/technology/">News</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search clients..." id="searchInput" onkeyup="filterClients()">
+            <button>🔍</button>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-message">
+            <h1>The Heart of Progress™</h1>
+            <p>Modernizing and managing the world's mission-critical systems</p>
+            <button onclick="alert('Learn more clicked!')">Learn More →</button>
+        </div>
+        <div class="header-image" id="headerImage"></div>
+    </header>
+
+    <section class="clients">
+        <div class="client-card" onclick="viewClient('Phat Buns')">
+            <img src="images/Phat Buns.jpg" alt="Phat Buns">
+            <h3>Phat Buns</h3>
+            <p>Franchise Operations Partner</p>
+        </div>
+        <div class="client-card" onclick="viewClient('Caffè Nero')">
+            <img src="images/CaffeNero.JPG" alt="Caffè Nero">
+            <h3>Caffè Nero</h3>
+            <p>Retail IT Infrastructure</p>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>“Kyndryl transformed how we manage our systems across all locations. Their team has been instrumental in streamlining our operations.”</p>
+            <h4>— Oliver Khan, Director of Technology, Phat Buns</h4>
+        </div>
+        <div class="testimonial">
+            <p>“The scalability and responsiveness of Kyndryl's infrastructure support has been a game-changer for our retail experience.”</p>
+            <h4>— Isabella Neri, Head of IT, Caffè Nero</h4>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Cloud Modernization</h3>
+                <p>Transform legacy systems into scalable cloud-native solutions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cybersecurity</h3>
+                <p>End-to-end protection of data, systems, and digital assets.</p>
+            </div>
+            <div class="service-card">
+                <h3>Data & AI</h3>
+                <p>Leverage insights from your data to make faster decisions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Digital Workplace</h3>
+                <p>Empower employees with secure, flexible work experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="industries">
+        <h2>Industries We work with</h2>
+        <div class="industry-grid">
+            <div><img src="images/Healthcare.png" alt="Healthcare"><p>Healthcare</p></div>
+            <div><img src="images/Finance.png" alt="Finance"><p>Finance</p></div>
+            <div><img src="images/Retail.png" alt="Retail"><p>Retail</p></div>
+            <div><img src="images/Government.png" alt="Government"><p>Government</p></div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Kyndryl</h2>
+        <p>We design, build, manage, and modernize the mission-critical systems that the world depends on every day. With deep industry expertise and a focus on innovation, we help clients stay ahead of the curve in a fast-changing world.</p>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to transform your infrastructure?</h2>
+        <button onclick="alert('Contact form coming soon!')">Get in Touch</button>
+    </section>
+<footer>
+      <footer>
+<footer>
+  <div class="footer-content">
+    <div class="footer-section services">
+      <h2>Services</h2>
+      <ul>
+        <li><a href="#">Applications</a></li>
+        <li><a href="#">Cloud</a></li>
+        <li><a href="#">Consulting</a></li>
+        <li><a href="#">Core Enterprise and zCloud</a></li>
+        <li><a href="#">Cyber Resilience</a></li>
+        <li><a href="#">Data and AI</a></li>
+        <li><a href="#">Digital Workplace</a></li>
+        <li><a href="#">Network and Edge</a></li>
+        <li><a href="#">Kyndryl Bridge</a></li>
+        <li><a href="#">Kyndryl Vital</a></li>
+      </ul>
+    </div>
+ 
+    <div class="footer-section about-us">
+      <h2>About Us</h2>
+      <ul>
+        <li><a href="#">Alliances</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Corporate Citizenship</a></li>
+        <li><a href="#">Kinship at Kyndryl™</a></li>
+        <li><a href="#">Leadership</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="#">Privacy</a> |
+      <a href="#">Terms</a> |
+      <a href="#">Security</a> |
+      <a href="#">Modern Slavery Statement</a> |
+      <a href="#">Certifications</a> |
+      <a href="#">Sitemap</a> |
+      <a href="#">Do Not Sell or Share My Personal Information</a> |
+      <a href="#">Cookie Preferences</a>
+    </div>
+    <div class="footer-meta">
+      <p>Copyright © 2025 Kyndryl Inc. All rights reserved.</p>
+      <div class="back-to-top">
+        <p>Back to Top</p>
+        <select name="language">
+          <option value="en-uk">United Kingdom - English</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+
+</footer>
+
+    <script src="js/script.js"></script>
+
+</body>
